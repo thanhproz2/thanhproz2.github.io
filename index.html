@@ -1,68 +1,77 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>
-      The BlackBox Digital Guild Inc
-    </title>
-    <base href="/" />
-    <meta name="description" content="Latest updates and statistic charts" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+<head>
+  <meta charset="utf-8">
+  <title>The BlackBox Digital Guild Inc</title>
+  <base href="/">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
-    <script>
-      WebFont.load({
-        google: {
-          families: [
-            'Poppins:300,400,500,600,700',
-            'Roboto:300,400,500,600,700'
-          ]
-        },
-        active: function() {
-          sessionStorage.fonts = true;
-        }
-      });
-    </script>
-    <link
-      href="./assets/vendors/vendors.bundle.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="./assets/default/base/style.bundle.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
-    <style>
-      .background-row-chart div google-chart div div div div svg g g g rect {
-        rx: 5;
-        ry: 5;
-      }
-    </style>
-  <link rel="stylesheet" href="styles.206e3a6d483882723c77.css"></head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <meta content="The BlackBox Digital Guild Inc" name="description" />
+  <meta content="" name="author" />
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+  <script src="./assets/js/plugins/fabricjs/fabric-3.4.0.min.js"></script>
+  <script>
+        WebFont.load({
+          google: {"families":["Poppins:300,400,500,600,700","Roboto:300,400,500,600,700"]},
+          active: function() {
+              sessionStorage.fonts = true;
+          }
+        });
+  </script>
+  <link href="./assets/vendors/base/vendors.bundle.css" rel="stylesheet" type="text/css" />
+  <link href="./assets/demo/default/base/style.bundle.css" rel="stylesheet" type="text/css" />
+  <link href="./assets/js/plugins/videojs/videojs.css" rel="stylesheet" type="text/css" />
+  <!-- <link href="./assets/js/plugins/videojs.markers.css" rel="stylesheet" type="text/css" /> -->
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
+  <style>
+    .background-row-chart div google-chart div div div div svg g g g rect {
+      rx: 5;
+      ry: 5;
+    }
+    .load {
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 100000000000;
+      display: block;
+      overflow: hidden;
+    }
+    .load img {
+      width: 400px;
+      height: 200px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -100px;
+      margin-left: -200px;
+    }
+    body {
+      overflow: hidden;
+    }
+  </style>
+  
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="styles.55b709396493a61e69be.css"></head>
+  <body class="m--skin- m-content--skin-light m-header--fixed m-header--fixed-mobile m-aside-left--offcanvas-default m-aside-left--enabled m-aside-left--fixed m-aside-left--skin-dark m-aside--offcanvas-default">
 
-  <div
-    class="m-page-loader m-page-loader--base m-page-loader--non-block"
-    style="margin-left: -80px; margin-top: -20px;"
-  >
-    <div class="m-blockui">
-      <span>
-        Please wait...
-      </span>
-      <span>
-        <div class="m-loader m-loader--brand"></div>
-      </span>
-    </div>
-  </div>
-
-  <body>
     <div class="max-height">
       <app-root></app-root>
     </div>
-  <script src="runtime-es2015.d768b0d8fae6752a80bf.js" type="module"></script><script src="runtime-es5.d768b0d8fae6752a80bf.js" nomodule defer></script><script src="polyfills-es5.9287009cd9e9e5e6cedd.js" nomodule defer></script><script src="polyfills-es2015.8c7b3302d3e259c3ee3d.js" type="module"></script><script src="scripts.8bcda67b96bc8e5b1e31.js" defer></script><script src="main-es2015.ee05957721fc05b005e3.js" type="module"></script><script src="main-es5.ee05957721fc05b005e3.js" nomodule defer></script></body>
+    <div class="load">
+      <img src="./assets/img/loading2.gif">
+    </div>
+  <script type="text/javascript" src="runtime.ec2944dd8b20ec099bf3.js"></script><script type="text/javascript" src="polyfills.f438de484b882a5d46f9.js"></script><script type="text/javascript" src="scripts.8dd086d7d5c24773153a.js"></script><script type="text/javascript" src="main.4f9922892b62d9a8078a.js"></script></body>
+  <script>
+    $(window).on('load', function(event) {
+      $('.load').fadeOut('fast');
+      setTimeout(() => {
+        $('body').css('overflow','auto');
+      }, 200);
+    });
+  </script>
 </html>
